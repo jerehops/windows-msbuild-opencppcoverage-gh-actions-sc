@@ -103,7 +103,7 @@ jobs:
             </packages>
           </coverage>
           "@
-          $filePath = cobertura.xml
+          $filePath = "cobertura.xml"
           $xmlContent | Out-File -FilePath $filePath -Encoding UTF8
           type cobertura.xml
       - name: SonarQube Scan
